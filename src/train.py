@@ -2,7 +2,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import src._init_paths
+import _init_paths
 
 import os
 
@@ -10,12 +10,12 @@ import json
 import torch
 import torch.utils.data
 from torchvision.transforms import transforms as T
-from src.lib.opts import opts
-from src.lib.models.model import create_model, load_model, save_model
+from lib.opts import opts
+from lib.models.model import create_model, load_model, save_model
 
-from src.lib.logger import Logger
-from src.lib.datasets.dataset_factory import get_dataset
-from src.lib.trains.train_factory import train_factory
+from lib.logger import Logger
+from lib.datasets.dataset_factory import get_dataset
+from lib.trains.train_factory import train_factory
 
 
 def main(opt):
